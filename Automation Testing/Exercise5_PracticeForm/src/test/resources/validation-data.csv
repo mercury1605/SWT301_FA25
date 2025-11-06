@@ -1,0 +1,8 @@
+firstName,lastName,gender,mobile,email,expectedLocator
+Jane,Doe,Female,0987654321,email-khong-hop-le,#userEmail:invalid
+,Doe,Male,0123456789,john@example.com,#firstName:invalid
+John,,Male,0123456789,john@example.com,#lastName:invalid
+John,Doe,,0123456789,john@example.com,input[name='gender']:invalid
+John,Doe,Male,,john@example.com,#userNumber:invalid
+John,Doe,Male,123456,john@example.com,#userNumber:invalid
+John,Doe,Male,012345678a,john@example.com,#userNumber:invalid
